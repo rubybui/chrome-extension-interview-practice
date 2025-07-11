@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Drill - Interview Questions</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Interview Questions</h1>
+            <div class="progress-indicator">
+                <span id="currentCard">1</span> / <span id="totalCards">5</span>
+            </div>
+        </header>
+
+        <main class="slider-container">
+            <button class="nav-button prev-button" id="prevButton" aria-label="Previous question">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+
+            <div class="cards-wrapper" id="cardsWrapper">
+                <div class="card active" data-index="0">
+                    <div class="card-content">
+                        <h2 class="question-title">Tell me about yourself</h2>
+                        <p class="question-text">Walk me through your background, experience, and what brings you to this role.</p>
+                        <div class="tips-section">
+                            <h3>Tips:</h3>
+                            <ul>
+                                <li>Keep it under 2 minutes</li>
+                                <li>Focus on relevant experience</li>
+                                <li>Connect to the role you're applying for</li>
+                                <li>End with why you're interested</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-index="1">
+                    <div class="card-content">
+                        <h2 class="question-title">What are your greatest strengths?</h2>
+                        <p class="question-text">Describe your key strengths and how they would benefit this position.</p>
+                        <div class="tips-section">
+                            <h3>Tips:</h3>
+                            <ul>
+                                <li>Choose 2-3 relevant strengths</li>
+                                <li>Provide specific examples</li>
+                                <li>Connect to job requirements</li>
+                                <li>Show how you've used them</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-index="2">
+                    <div class="card-content">
+                        <h2 class="question-title">What is your greatest weakness?</h2>
+                        <p class="question-text">Discuss a weakness you've identified and how you're working to improve it.</p>
+                        <div class="tips-section">
+                            <h3>Tips:</h3>
+                            <ul>
+                                <li>Choose a genuine weakness</li>
+                                <li>Show self-awareness</li>
+                                <li>Demonstrate improvement efforts</li>
+                                <li>Keep it professional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-index="3">
+                    <div class="card-content">
+                        <h2 class="question-title">Why do you want this job?</h2>
+                        <p class="question-text">Explain your motivation for applying and what excites you about this opportunity.</p>
+                        <div class="tips-section">
+                            <h3>Tips:</h3>
+                            <ul>
+                                <li>Research the company thoroughly</li>
+                                <li>Connect to your career goals</li>
+                                <li>Mention specific aspects of the role</li>
+                                <li>Show enthusiasm and fit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-index="4">
+                    <div class="card-content">
+                        <h2 class="question-title">Where do you see yourself in 5 years?</h2>
+                        <p class="question-text">Share your career aspirations and how this role fits into your long-term plans.</p>
+                        <div class="tips-section">
+                            <h3>Tips:</h3>
+                            <ul>
+                                <li>Show ambition but be realistic</li>
+                                <li>Connect to the company's growth</li>
+                                <li>Demonstrate commitment to growth</li>
+                                <li>Align with the role's progression</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-button next-button" id="nextButton" aria-label="Next question">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </main>
+
+        <footer class="footer">
+            <div class="card-indicators" id="cardIndicators">
+                <button class="indicator active" data-index="0" aria-label="Go to question 1"></button>
+                <button class="indicator" data-index="1" aria-label="Go to question 2"></button>
+                <button class="indicator" data-index="2" aria-label="Go to question 3"></button>
+                <button class="indicator" data-index="3" aria-label="Go to question 4"></button>
+                <button class="indicator" data-index="4" aria-label="Go to question 5"></button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

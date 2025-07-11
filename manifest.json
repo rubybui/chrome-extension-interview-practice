@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Flash Drill",
+  "version": "1.0.0",
+  "description": "A Chrome extension for flash card learning and drilling interviews behavior questions",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Flash Drill",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "icons": {
+      "16": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+} 
